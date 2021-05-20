@@ -13,10 +13,8 @@ public class Detalle {
   private AccountRetrieveExcel accountThree;
   
   private List<AccountRetrieveExcel> accountList;
+ 
   
-  
-  
-
   public AccountRetrieveExcel getAccountOne() {
     return accountOne;
   }

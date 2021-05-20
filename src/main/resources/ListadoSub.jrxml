@@ -3,9 +3,9 @@
     <property name="ireport.zoom" value="2.357947691000002"/>
     <property name="ireport.x" value="7678"/>
     <property name="ireport.y" value="0"/>
-    <parameter name="accountListSub"  class="java.lang.String" isForPrompting="false"/>
-    <field name="acountList" class="java.util.List">
-        <fieldDescription><![CDATA[acountList]]></fieldDescription>
+    <parameter name="accountListSub" class="net.sf.jasperreports.engine.JasperReport"/>
+    <field name="accountList" class="java.util.List">
+        <fieldDescription><![CDATA[accountList]]></fieldDescription>
     </field>
     <detail>
         <band height="125" splitType="Stretch">
@@ -330,7 +330,7 @@ Ambiental]]></text>
             </staticText>
             <subreport>
                 <reportElement x="0" y="44" width="3873" height="30" uuid="e32803aa-7454-466a-8cf3-b19bfc224953"/>
-                <dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{acountList})]]></dataSourceExpression>
+                <dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{accountList})]]></dataSourceExpression>
                 <subreportExpression><![CDATA[$P{accountListSub}]]></subreportExpression>
             </subreport>
         </band>
