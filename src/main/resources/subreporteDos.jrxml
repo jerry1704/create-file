@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="comparacionProveedor_subreport1" pageWidth="112" pageHeight="802" columnWidth="112" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6af40b6d-f70c-4298-8cdb-711ba6c5aff2">
+    <property name="ireport.zoom" value="1.3310000000000004"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <field name="businessName" class="java.lang.String"/>
+    <field name="rfc" class="java.lang.String"/>
+    <field name="origin" class="java.lang.String"/>
+    <field name="certificationType" class="java.lang.String"/>
+    <field name="certificationStatus" class="java.lang.String"/>
+    <field name="certificationDate" class="java.lang.String"/>
+    <field name="lastValidation" class="java.lang.String"/>
+    <field name="certificationExpirateDate" class="java.lang.String"/>
+    <field name="legalEntity" class="java.lang.String"/>
+    <field name="country" class="java.lang.String"/>
+    <field name="sizeCompany" class="java.lang.String"/>
+    <field name="economicActivity" class="java.lang.String"/>
+    <field name="webSite" class="java.lang.String"/>
+    <field name="state" class="java.lang.String"/>
+    <field name="city" class="java.lang.String"/>
+    <field name="municipality" class="java.lang.String"/>
+    <field name="district" class="java.lang.String"/>
+    <field name="stretName" class="java.lang.String"/>
+    <field name="name" class="java.lang.String"/>
+    <field name="firstSurname" class="java.lang.String"/>
+    <field name="secondSurname" class="java.lang.String"/>
+    <field name="mobilePhone" class="java.lang.String"/>
+    <field name="email" class="java.lang.String"/>
+    <field name="recursosHumanos" class="java.lang.Float"/>
+    <field name="scoreLegal" class="java.lang.Float"/>
+    <field name="scoreFiscal" class="java.lang.Float"/>
+    <field name="scoreEthicsIntegrity" class="java.lang.Float"/>
+    <field name="scoreFinancial" class="java.lang.Float"/>
+    <field name="scoreCommercial" class="java.lang.Float"/>
+    <field name="scoreQuality" class="java.lang.Float"/>
+    <field name="scoreHealth" class="java.lang.Float"/>
+    <field name="scoreEnvironment" class="java.lang.Float"/>
+    <field name="scoreOperation" class="java.lang.Float"/>
+    <field name="scoreEconomic" class="java.lang.Float"/>
+    <field name="certificateQuality" class="java.lang.Boolean"/>
+    <field name="certificateHealthSafety" class="java.lang.Boolean"/>
+    <field name="certificateEnvironmental" class="java.lang.Boolean"/>
+    <field name="observationList" class="java.lang.Integer"/>
+    <field name="disabledSfp" class="java.lang.Integer"/>
+    <detail>
+        <band height="442" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="374" width="100" height="11" uuid="34f9a1d5-31a8-4ab4-b425-271c3a707bd4"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreEconomic}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="22" width="100" height="11" uuid="76a7ab3e-db16-4c2f-9cbc-76307a7438d0"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{origin}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="216" width="100" height="11" uuid="e6c97421-ae15-4e51-aa94-a58d773e69a4"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{firstSurname}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="306" width="100" height="11" uuid="4d9e89b3-5739-46ab-8dcc-db1a7f3b846a"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreFinancial}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="194" width="100" height="11" uuid="ea5b64aa-31be-41df-b816-f85555020109"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{stretName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="182" width="100" height="12" uuid="54a9a7a8-81f8-4007-88cc-fdcf79e8f1f3"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{district}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="125" width="100" height="11" uuid="22fcfb91-fecd-43f9-ae9c-aa13027eef6d"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{economicActivity}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="147" width="100" height="11" uuid="3bf60c1a-5df2-411b-a8e0-0e239dc331d3"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="363" width="100" height="11" uuid="194ffa54-5a2d-4582-bb0a-d63d8699d454"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreOperation}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="205" width="100" height="11" uuid="001a2a5b-af45-4e99-8459-7bc0e2b103f0"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="430" width="100" height="11" uuid="526a4c5e-9cc4-416b-9077-f8f8cc51cdad"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{disabledSfp} >0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="33" width="100" height="11" uuid="429e2098-efdd-4b1d-9a13-14d035f064c2"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificationType}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="228" width="100" height="11" uuid="7cc89dde-a8ed-4de2-ba05-50f968a80ee1"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{secondSurname}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="78" width="100" height="13" uuid="8b6bbe35-3fe1-4318-80ea-89c4745c0d5e"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificationExpirateDate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="261" width="100" height="11" uuid="7d9b6c7c-4be3-43ad-b5a5-ff84aaf9d451"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{recursosHumanos}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="66" width="100" height="12" uuid="f6b9c6ed-20a6-4bd9-91ef-ca85f955b9b8"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{lastValidation}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="385" width="100" height="11" uuid="8ce2ec30-0fc7-4137-84a8-f64dc83b838a"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificateQuality} == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="419" width="100" height="11" uuid="a5dd44ad-de71-4988-adb1-81fdf5c967b1"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{observationList} >0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="352" width="100" height="11" uuid="76208e2d-756f-4b1c-958a-4cd89a6ae11d"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreEnvironment}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="44" width="100" height="11" uuid="befa501b-f4fc-4c48-9f29-cd9dd2ebb954"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificationStatus}.equalsIgnoreCase("CERTIFIED") ? "Certificación activa" : "Certificación inactiva"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="329" width="100" height="11" uuid="9ea578b2-9338-4d89-a7cc-8413489fcf2e"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreQuality}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="170" width="100" height="12" uuid="5c31a6ad-2e01-4287-b5af-9b59221fecff"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{municipality}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="295" width="100" height="11" uuid="53756789-b18c-4a73-bcd8-680578d9dee3"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreEthicsIntegrity}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="317" width="100" height="12" uuid="6fef6123-19a7-4227-8d2f-29f89ad29f25"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreCommercial}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="250" width="100" height="11" uuid="fa05b782-4029-4fa1-ad9f-79fba6a0723f"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="55" width="100" height="11" uuid="5e795e0f-129a-43d2-82a2-5e7ebc914160"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificationDate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="340" width="100" height="11" uuid="ac89f12c-5f2e-48f0-92be-ed6d0466f0d4"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreHealth}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="272" width="100" height="12" uuid="1d3ddaab-8944-4b14-b1ff-811614d19fb4"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreLegal}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="91" width="100" height="12" uuid="37141931-bad6-4d59-9406-a64ef7c1df0a"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{legalEntity}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="136" width="100" height="11" uuid="ed9f2436-d7d9-40c6-bd76-8756a9e543f0"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{webSite}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="408" width="100" height="11" uuid="bb11660e-b908-400e-8220-201471d71535"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificateEnvironmental} == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="396" width="100" height="12" uuid="73ef80c4-a860-4809-b3c0-f7cf892ed7d0"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificateHealthSafety} == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="239" width="100" height="11" uuid="9e1920bc-f4d3-455f-be8e-967e9df652b8"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{mobilePhone}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="11" width="100" height="11" uuid="17d98806-ecdf-4e5a-98a4-77210e25f418"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{rfc}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="0" width="100" height="11" uuid="43a26e7e-166a-4df5-abe0-27bd98c5a664"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{businessName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="158" width="100" height="12" uuid="71bb8b0f-bdda-48be-89d6-212b400793a8"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="284" width="100" height="11" uuid="c942cc1b-66f4-4e2c-9c8a-c70f2836bbbc"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{scoreFiscal}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="114" width="100" height="11" uuid="e240f974-4a22-4d1d-b2aa-538b15f9f55d"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{sizeCompany}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="103" width="100" height="11" uuid="4dae16f2-cb31-4b4d-8368-6fe2b8c397c8"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{country}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>

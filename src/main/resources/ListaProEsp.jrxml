@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="accounts-list-es" pageWidth="2884" pageHeight="583" orientation="Landscape" columnWidth="2884" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="11fed6b2-72f3-4d70-8860-476bdc52ea7f">
+    <property name="ireport.zoom" value="2.357947691000002"/>
+    <property name="ireport.x" value="5688"/>
+    <property name="ireport.y" value="0"/>
+    <subDataset name="dataset1" uuid="bc0e7c0b-4ca7-43c5-96bb-8462d160025c">
+        <field name="businessName" class="java.lang.String"/>
+        <field name="rfc" class="java.lang.String"/>
+        <field name="origin" class="java.lang.String"/>
+        <field name="certificationType" class="java.lang.String"/>
+        <field name="certificationStatus" class="java.lang.String"/>
+        <field name="certificationDate" class="java.lang.String"/>
+        <field name="lastValidation" class="java.lang.String"/>
+        <field name="certificationExpirateDate" class="java.lang.String"/>
+        <field name="legalEntity" class="java.lang.String"/>
+        <field name="country" class="java.lang.String"/>
+        <field name="sizeCompany" class="java.lang.String"/>
+        <field name="economicActivity" class="java.lang.String"/>
+        <field name="webSite" class="java.lang.String"/>
+        <field name="state" class="java.lang.String"/>
+        <field name="city" class="java.lang.String"/>
+        <field name="municipality" class="java.lang.String"/>
+        <field name="district" class="java.lang.String"/>
+        <field name="stretName" class="java.lang.String"/>
+        <field name="name" class="java.lang.String"/>
+        <field name="firstSurname" class="java.lang.String"/>
+        <field name="secondSurname" class="java.lang.String"/>
+        <field name="mobilePhone" class="java.lang.String"/>
+        <field name="email" class="java.lang.String"/>
+        <field name="recursosHumanos" class="java.lang.Float"/>
+        <field name="scoreLegal" class="java.lang.Float"/>
+        <field name="scoreFiscal" class="java.lang.Float"/>
+        <field name="scoreEthicsIntegrity" class="java.lang.Float"/>
+        <field name="scoreFinancial" class="java.lang.Float"/>
+        <field name="scoreCommercial" class="java.lang.Float"/>
+        <field name="scoreQuality" class="java.lang.Float"/>
+        <field name="scoreHealth" class="java.lang.Float"/>
+        <field name="scoreEnvironment" class="java.lang.Float"/>
+        <field name="scoreOperation" class="java.lang.Float"/>
+        <field name="scoreEconomic" class="java.lang.Float"/>
+        <field name="certificateQuality" class="java.lang.Boolean"/>
+        <field name="certificateHealthSafety" class="java.lang.Boolean"/>
+        <field name="certificateEnvironmental" class="java.lang.Boolean"/>
+        <field name="observationList" class="java.lang.Integer"/>
+        <field name="disabledSfp" class="java.lang.Integer"/>
+    </subDataset>
+    <parameter name="datasource1" class="java.util.List"/>
+    <columnHeader>
+        <band height="44" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="131" height="44" uuid="e30f8350-d910-4a0c-a70c-aeebc0c593a5"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Razón Social]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="131" y="0" width="68" height="44" uuid="ea4c8d5c-9ab5-495c-80ae-e866a1a47c3c"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[RFC]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="199" y="0" width="41" height="44" uuid="e933ca2a-dde8-4648-8c88-f40e8d261ddd"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Origen]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="240" y="0" width="71" height="44" uuid="1510de8e-be6d-4590-9f5a-6099f1c600d3"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Nivel de certificación]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="311" y="0" width="60" height="44" uuid="82e0d8f5-6ec1-47d6-8621-016c97175479"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Estatus de
+certificación]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="371" y="0" width="64" height="44" uuid="e195c7e9-736f-416b-85d9-d2d9a5c76d0d"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Fecha de certificación]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="435" y="0" width="69" height="44" uuid="4ca2513e-f91f-43a4-a858-6363b2862ba9"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Fecha ultima actualización]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="504" y="0" width="72" height="44" uuid="b9a697c8-6741-4c74-a1ca-cf43ae8f59ff"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Fecha de vencimiento ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="576" y="0" width="62" height="44" uuid="41c432f0-0330-4522-8c0c-21f377dfa4c4"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Personalidad jurídica]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="638" y="0" width="51" height="44" uuid="b758edcd-04fd-4896-b87e-471153618176"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Pais]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="689" y="0" width="84" height="44" uuid="b999f843-05e7-45b7-be4b-ec36a4c8376d"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Tamaño de la
+empresa]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="773" y="0" width="74" height="44" uuid="8c914f9b-6302-45f9-b79b-6cf7ea6fd79f"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Actividad económica]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="847" y="0" width="53" height="44" uuid="1a1f2999-11d9-4f43-827a-56278b4365f2"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Sitio web ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="900" y="0" width="84" height="44" uuid="f1481017-e389-4948-9715-2e27565eae24"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.
+Estado]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="984" y="0" width="83" height="44" uuid="183a2bce-4e3e-4586-909d-3ade1976f15d"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.
+Ciudad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1143" y="0" width="75" height="44" uuid="cf72e8ca-594e-46f2-bac8-ea73c91ef7f1"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.
+Colonia]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1218" y="0" width="86" height="44" uuid="e87e04ab-2b6f-4060-9508-c1229fad4c33"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.
+Calle,número
+interior,número
+exterior.]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1304" y="0" width="63" height="44" uuid="da5dd41f-b6b1-418d-aba1-118dbecd6f43"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal.
+Nombre]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1067" y="0" width="76" height="44" uuid="333239e0-71da-4ed7-95be-81ec57a5c5fd"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.
+Municipio]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1367" y="0" width="58" height="44" uuid="8f2aad17-9dd2-4503-b8d2-05f34315350e"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Apellido Paterno]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1425" y="0" width="59" height="44" uuid="4eb3091f-13cc-4467-9b7b-37c45b2233f0"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Apellido Materno ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1484" y="0" width="67" height="44" uuid="692e5513-e2ca-48a4-bb4e-6159ffe436a4"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Telefono ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1551" y="0" width="56" height="44" uuid="1eb8c575-ba84-4908-ad5b-ecc4cf6e1396"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Correo electrónico]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1607" y="0" width="60" height="44" uuid="6a00b227-e895-4541-9908-a9acd0c31467"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Recursos
+humanos]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1667" y="0" width="60" height="44" uuid="3407b1e1-9451-44fc-bc8c-f6e95ca6a413"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación Legal]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1727" y="0" width="58" height="44" uuid="1614a48e-142d-4600-8beb-770043a00898"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación Fiscal]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1785" y="0" width="60" height="44" uuid="caecaa8e-f437-493f-bf62-d1096537aaf0"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación Ética e integridad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1845" y="0" width="56" height="44" uuid="5d4e8dbe-7241-4a31-b118-af6a2a1c728b"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación financiera]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1901" y="0" width="59" height="44" uuid="913602a5-5520-4ea2-9ecc-827975f69ec9"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación comercial]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1960" y="0" width="70" height="44" uuid="049fd51a-5aed-4e9c-9f71-bd7d5fb741ac"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación de calidad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2030" y="0" width="69" height="44" uuid="d3a863e9-92ab-4e0d-8aed-f03a8508597f"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación de
+salud y
+seguridad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2099" y="0" width="67" height="44" uuid="11ed8a36-38bd-422b-af2a-c1704309985f"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación de
+medio
+ambiente]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2166" y="0" width="63" height="44" uuid="b17e2ab4-663d-4a24-a571-04c21e0acdf3"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación
+operativa]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2229" y="0" width="64" height="44" uuid="24f8ffc3-555d-46f5-baf5-2249ff273c79"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Evaluación
+económica]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2293" y="0" width="69" height="44" uuid="ff4ab2a4-f7b5-4703-9f35-19108f409743"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Certificado de
+calidad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2362" y="0" width="69" height="44" uuid="1baf9b38-9033-4043-b449-972fa90a7ee9"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Certificado de
+Salud y
+seguridad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2501" y="0" width="75" height="44" uuid="89025663-1812-4ccf-88a0-d6d864cbc812"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Observación en
+Listas(Sí/No)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2431" y="0" width="70" height="44" uuid="2194b2d4-9558-48ea-993e-aa5d3426d2df"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Certificado
+Ambiental]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2576" y="0" width="85" height="44" uuid="343f622e-bbc5-4622-9ff0-36d8bf850b99"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Inhabilitado
+SFP(Secretaría
+ de la Función
+ pública)(Sí/No)]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <componentElement>
+                <reportElement x="0" y="0" width="2661" height="50" uuid="b5060e9e-da7a-4fbb-972c-92ef7fd85f75"/>
+                <jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+                    <datasetRun subDataset="dataset1" uuid="4b62fc8e-f5cb-4e18-afc3-25656e127bcc">
+                        <dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{datasource1})]]></dataSourceExpression>
+                    </datasetRun>
+                    <jr:listContents height="50" width="2661">
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="0" y="0" width="131" height="22" uuid="a9fac412-b379-4fcc-a6b8-b94c522da4f7"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{businessName}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="240" y="0" width="71" height="22" uuid="58648733-0dee-48b2-88dc-5a033f51f141"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{certificationType}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="199" y="0" width="41" height="22" uuid="8295c45c-a1dc-483b-997a-74815997880f"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{origin}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="131" y="0" width="68" height="22" uuid="8bd695ea-c0d4-4041-8af8-568a587111d1"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{rfc}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="504" y="0" width="72" height="22" uuid="98de4dde-c206-4e4c-9eae-5b8bca578744"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{certificationExpirateDate}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="311" y="0" width="60" height="22" uuid="ce5cfc6e-24f0-4159-9b7a-314abf096114"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{certificationStatus}.equalsIgnoreCase("CERTIFIED") ? "Certificación activa" : "Certificación inactiva"]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="435" y="0" width="69" height="22" uuid="f5995caf-2a7c-482a-a071-2010a472121f"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{lastValidation}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="371" y="0" width="64" height="22" uuid="3b758f67-aaa9-400e-9b32-c5d81470c80b"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{certificationDate}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="689" y="0" width="84" height="22" uuid="f8a4820c-cae0-4332-894d-b22d403eb429"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{sizeCompany}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="773" y="0" width="74" height="22" uuid="91a79906-165d-4a28-981e-20d62748d251"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{economicActivity}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="576" y="0" width="62" height="22" uuid="ff9d3030-07b5-4f34-a366-eb318fb6f58b"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{legalEntity}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="900" y="0" width="84" height="22" uuid="b8ffde86-1526-4f8a-886f-e75f8f0d7829"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="847" y="0" width="53" height="22" uuid="745025b9-a1ce-411d-abd3-728287d355e3"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{webSite}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1067" y="0" width="76" height="22" uuid="f60f9341-5789-4354-a35b-c9a15bcf1ed5"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{municipality}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="984" y="0" width="83" height="22" uuid="b527117f-6136-4ec8-a26a-4dd9dafd754f"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="638" y="0" width="51" height="22" uuid="a497d204-4569-4210-b1ad-86e9d7cb96cd"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{country}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1304" y="0" width="63" height="22" uuid="85edac5c-ed5c-49f8-b11d-9d04f8a77026"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1218" y="0" width="86" height="22" uuid="498f3509-6339-4bf0-840e-21d541727d62"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{stretName}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1425" y="0" width="59" height="22" uuid="b68c408c-6bad-41c3-af1c-84d895ebc947"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{secondSurname}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1551" y="0" width="56" height="22" uuid="af82215f-29d6-409f-b887-5b432b0770c2"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1143" y="0" width="75" height="22" uuid="a24cc4f1-6cbb-4634-88b3-e724eb5cef66"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{district}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1484" y="0" width="67" height="22" uuid="c887c06f-814a-4fa2-93a3-8022a37eaf84"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{mobilePhone}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1367" y="0" width="58" height="22" uuid="50c2c3e1-7aae-409a-a635-76ceca07d3e8"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{firstSurname}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1607" y="0" width="60" height="22" uuid="8d0ff479-282f-45ab-80b4-65c4fd1b6c06"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{recursosHumanos}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2293" y="0" width="69" height="22" uuid="bafe31b7-b427-45e3-adfc-cb44be880bc2"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{certificateQuality} == true ? "Si" : "No"]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1727" y="0" width="58" height="22" uuid="fc7dc391-8338-434f-ae45-2b596be31051"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreFiscal}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1960" y="0" width="70" height="22" uuid="d7a2890d-d343-4a6f-a675-17609f595496"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreQuality}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2229" y="0" width="64" height="22" uuid="f2ba4440-7e80-4a67-ab49-5ffc984c4b4e"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreEconomic}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1901" y="0" width="59" height="22" uuid="7861fc64-d5f6-4ea0-809a-8ad3d92c974b"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreCommercial}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1845" y="0" width="56" height="22" uuid="84a57dd5-c930-44ed-a6b0-d9c45fc635dc"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreFinancial}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2166" y="0" width="63" height="22" uuid="d9890936-a370-483f-ae4d-f90909292002"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreOperation}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2099" y="0" width="67" height="22" uuid="00554bfe-b876-4afa-a578-09aa96a4e21a"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreEnvironment}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1785" y="0" width="60" height="22" uuid="e86d4564-967d-49e8-ad2f-7832b594fa6c"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreEthicsIntegrity}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2030" y="0" width="69" height="22" uuid="838bab4b-179e-4f8a-a9d8-a23087afcc83"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreHealth}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="1667" y="0" width="60" height="22" uuid="ce4b1111-5b68-4a66-bd78-e3cc19b01fb4"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8" isBold="false"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{scoreLegal}]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2431" y="0" width="70" height="22" uuid="13770ca0-9865-4146-8b4c-f59a5a8a1c88"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{certificateEnvironmental} == true ? "Si" : "No"]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2362" y="0" width="69" height="22" uuid="3986fc37-3ec0-433f-8127-b8c25f72aaf8"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{certificateHealthSafety} == true ? "Si" : "No"]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2576" y="0" width="85" height="22" uuid="e7ad3dd4-8af0-4b6a-93b3-9badd46c6241"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{disabledSfp} > 0 ? "Si" : "No"]]></textFieldExpression>
+                        </textField>
+                        <textField isBlankWhenNull="true">
+                            <reportElement x="2501" y="0" width="75" height="22" uuid="10206bce-c518-4313-bdc1-faea62770c04"/>
+                            <textElement textAlignment="Center" verticalAlignment="Middle">
+                                <font size="8"/>
+                            </textElement>
+                            <textFieldExpression><![CDATA[$F{observationList} >0 ? "Si" : "No"]]></textFieldExpression>
+                        </textField>
+                    </jr:listContents>
+                </jr:list>
+            </componentElement>
+        </band>
+    </detail>
+</jasperReport>

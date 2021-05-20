@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ComparacionNuevo" pageWidth="720" pageHeight="1152" columnWidth="680" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6eacd05c-7144-4b61-9e4c-94f8434db6bf">
+    <property name="ireport.zoom" value="2.1435888100000016"/>
+    <property name="ireport.x" value="360"/>
+    <property name="ireport.y" value="768"/>
+    <parameter name="detalle" class="com.javatechie.report.util.Detalle"/>
+    <detail>
+        <band height="852" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="31" height="20" uuid="0332959d-4c0a-4d0f-89c7-53ad7b678a53"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[#]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="0" width="172" height="20" uuid="3549b099-afe6-4106-80fb-9c27ea4a6ad9"/>
+                <textElement textAlignment="Center">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Descripcion]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="203" y="0" width="139" height="20" uuid="0dd9d9c7-3067-489d-996b-4fab481bbfb3"/>
+                <textElement>
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Proveedor 1]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="20" width="31" height="20" uuid="a97fb753-7612-4df4-bb79-9dbcfc9e3a32"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[1]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="40" width="31" height="20" uuid="0626f4d5-442e-4549-b744-ac8eaede859a"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[2]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="60" width="31" height="20" uuid="6dd1b22d-3641-4634-b341-e1c8e0d9554d"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[3]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="80" width="31" height="20" uuid="e7cb5d86-14c9-49d8-b3ad-4adea4c0e1a9"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[4]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="20" width="172" height="20" uuid="43394ae2-6c1e-45e3-88e2-fbcde51fc2ae"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Razón Social]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="40" width="172" height="20" uuid="71946933-547a-46a9-a3a1-925cce7219fe"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[RFC]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="60" width="172" height="20" uuid="cc5eed1e-2efc-406f-9cdb-e13fc22e83e2"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Origen]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="80" width="172" height="20" uuid="9d89308f-437b-4c54-bc9c-7c6e2f74a34e"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Nivel de certificación]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="20" width="139" height="20" uuid="ae130475-584c-4e66-acf5-3c4d1263a350"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getBusinessName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="40" width="139" height="20" uuid="8f2552a4-ff49-4ccc-9237-409989dd5f26"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getRfc()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="60" width="139" height="20" uuid="8083e4e8-960f-4012-a565-3bcb450e07bc"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getOrigin()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="80" width="139" height="20" uuid="02cacd82-39cd-419b-bf85-61ee88a3641e"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCertificationType()]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="100" width="31" height="20" uuid="689fba67-72ad-448c-87a4-2a476d96e6b9"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[5]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="120" width="31" height="20" uuid="2cdc5642-8e2c-4dce-ac3a-7458ca7178c7"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[6]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="140" width="31" height="30" uuid="11952470-bb02-4017-ad90-a2dd9d391ac5"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[7]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="170" width="31" height="20" uuid="4854de2a-e279-4db9-af5c-313a03eced83"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[8]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="190" width="31" height="20" uuid="3a90a2ab-5456-4e24-aa3d-a4f1eb5271be"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[9]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="210" width="31" height="20" uuid="328aa837-5bf9-43de-be34-cca2cef8fe52"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[10]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="100" width="172" height="20" uuid="581109d0-8530-4dd3-9844-df21935056b4"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Estatus de certificación]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="120" width="172" height="20" uuid="7d4dc3a1-ed05-4e73-8358-9cc771575fd3"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Fecha de certificación]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="140" width="172" height="30" uuid="baa8aabc-461f-4fd8-9053-7933f3a9d71f"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Ultima Validación
+(Fecha de ultima actualización)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="170" width="172" height="20" uuid="7a5b9702-6127-4933-b226-6c4205e21de3"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Fecha de vencimiento]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="190" width="172" height="20" uuid="e3ef01b8-79de-44ef-9539-3b9eab12a637"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Personalidad jurídica]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="210" width="172" height="20" uuid="49c180a5-f39a-40ec-853e-e24d5fb624a7"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Pais]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="100" width="139" height="20" uuid="faa99352-03ff-4e21-a104-9ea82ae4d7d0"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCertificationStatus().equalsIgnoreCase("CERTIFIED")
+                      ? "Certificación activa" : "Certificación inactiva"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="120" width="139" height="20" uuid="228e52fe-d4df-4a83-b973-610af010d885"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCertificationDate()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="140" width="139" height="30" uuid="08f2cb18-5af3-40f0-a0dd-869a45a53563"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getLastValidation()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="170" width="139" height="20" uuid="eec1ccf6-fe9a-4fed-97dd-26add0313abc"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCertificationExpirateDate()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="190" width="139" height="20" uuid="f31d2444-11c6-4899-89e0-6a29d4a3ffb5"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getLegalEntity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="210" width="139" height="20" uuid="c827fe19-59e6-458a-bcac-d122cac92545"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCountry()]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="342" y="0" width="139" height="20" uuid="1698797a-13a4-488b-bec1-802e755d2758"/>
+                <textElement>
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Proveedor 2]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="20" width="139" height="20" uuid="997573df-92c5-4340-bff8-7a4da1c5e294"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getBusinessName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="40" width="139" height="20" uuid="6c02efae-6598-4628-afa3-a08ffc25ea57"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getRfc()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="60" width="139" height="20" uuid="d27c25a5-aeb7-40c1-9ed0-dd59b734e146"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getOrigin()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="80" width="139" height="20" uuid="ff155b18-8c7b-48c8-95f0-64f9f47bc1b8"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCertificationType()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="100" width="139" height="20" uuid="583902ac-9834-45a1-b1ca-55e870b96b9e"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCertificationStatus().equalsIgnoreCase("CERTIFIED")
+                      ? "Certificación activa" : "Certificación inactiva"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="120" width="139" height="20" uuid="f20556da-6fdd-414b-864f-a52293d8cf9c"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCertificationDate()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="140" width="139" height="30" uuid="1f65ccb7-79ad-4c21-a882-a77461849977"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getLastValidation()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="170" width="139" height="20" uuid="63fc7d91-3619-40a7-8555-a98aa1aa12d7"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCertificationExpirateDate()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="190" width="139" height="20" uuid="1d6cdaf3-4e99-44bc-a0ef-e8df1200aaa9"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getLegalEntity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="210" width="139" height="20" uuid="13d24365-6cbb-4168-a445-f0f0027dcadc"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCountry()]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="481" y="0" width="139" height="20" uuid="201adb8e-afec-461d-a8d3-900c3f4d8c84"/>
+                <textElement>
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Proveedor 3]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="170" width="139" height="20" uuid="9f4e436f-5a07-484a-8257-36c48a827a46"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCertificationExpirateDate()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="140" width="139" height="30" uuid="97254aa1-a174-4e1d-8ab8-044ed838cd6c"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getLastValidation()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="190" width="139" height="20" uuid="f330bb7e-2ebd-45f5-bb38-d801a6d90a51"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getLegalEntity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="80" width="139" height="20" uuid="4cc50cc8-fb14-4d8e-a838-b675386c0795"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCertificationType()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="100" width="139" height="20" uuid="c8462d36-d1d5-43dd-bc19-c861c837a17a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCertificationStatus().equalsIgnoreCase("CERTIFIED")
+                      ? "Certificación activa" : "Certificación inactiva"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="120" width="139" height="20" uuid="7f90b949-1f7f-45a8-b87e-53777f39b5cd"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCertificationDate()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="210" width="139" height="20" uuid="4ced7636-9e0c-43f8-9952-15d2f7d97671"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCountry()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="40" width="139" height="20" uuid="a2d81fe6-1e72-421f-80e4-4d78fb62307b"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getRfc()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="60" width="139" height="20" uuid="91da64f7-733a-4d35-8520-5237aadd8452"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getOrigin()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="20" width="139" height="20" uuid="6c34dbf8-105f-4a43-a110-6b54928245a5"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getBusinessName()]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="230" width="31" height="20" uuid="1b8dc15b-3db1-40dd-9ad4-871cf7deeaad"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[11]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="250" width="31" height="20" uuid="467423fe-252f-4f28-b357-323a93e0f14d"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[12]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="270" width="31" height="20" uuid="f89443ee-2afb-4216-b4dd-84e411ecaf72"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[13]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="290" width="31" height="20" uuid="c78b806b-6159-4d36-9b03-f9868ac05b5d"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[14]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="310" width="31" height="20" uuid="7bd52df0-9753-41e9-b9d1-64dbc3424553"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[15]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="330" width="31" height="20" uuid="a4a75d6d-6eab-4001-956c-e8dc58063760"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[16]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="350" width="31" height="20" uuid="0fc20586-e4e3-4831-8873-1edbb3bfbe76"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[17]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="370" width="31" height="47" uuid="bb36f9ad-1bdf-4e0a-820e-75365a65a554"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[18]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="417" width="31" height="20" uuid="68c478e5-9a7b-4be9-85b8-0f27acc57399"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[19]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="437" width="31" height="20" uuid="7c322ba6-d641-47da-beb6-c53f3e488244"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[20]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="230" width="172" height="20" uuid="159cb69c-ebf2-4420-ac07-4108d413aeae"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Tamaño de la empresa]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="250" width="172" height="20" uuid="c41584b4-a671-464d-9c1d-1bf455aecfc1"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Actividad económica]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="270" width="172" height="20" uuid="5e05cf49-b130-45aa-9392-c7170fec0762"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Sitio web ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="290" width="172" height="20" uuid="1fd31c32-db01-448a-9715-d091ff0367bc"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.Estado]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="310" width="172" height="20" uuid="94e541e2-997b-477b-a682-391d10055230"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.Ciudad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="330" width="172" height="20" uuid="415f762f-54d7-4eed-be66-59328077f3b0"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.Municipio]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="350" width="172" height="20" uuid="07784931-517b-4c5f-a2ec-f285049fc3fc"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.Colonia]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="370" width="172" height="47" uuid="5be531b5-0050-4761-b48d-84d767766c93"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Dirección legal.Calle,
+número interior,
+número exterior.]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="417" width="172" height="20" uuid="3f4b6380-647d-4125-ba13-8edb040bad97"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Nombre]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="437" width="172" height="20" uuid="61436fc3-d4fd-4608-9e5b-5fc971c5bd2b"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Apellido Paterno]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="230" width="139" height="20" uuid="2e28b491-5d6e-4361-b87a-4a8e7aa51027"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getSizeCompany()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="250" width="139" height="20" uuid="ff78d5d3-e05e-4f44-90a7-fa23abec0adf"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getEconomicActivity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="270" width="139" height="20" uuid="162fa35e-569f-46c5-9242-1d270b57578a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getWebSite()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="290" width="139" height="20" uuid="b49c48bc-917f-4bc9-80f7-02b5e8f24514"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getState()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="310" width="139" height="20" uuid="26b81312-61b2-422a-9aab-7113d979c545"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="330" width="139" height="20" uuid="0717fb7d-d3d0-4755-a3dc-0dce4748b138"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getMunicipality()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="350" width="139" height="20" uuid="4f1fa963-58eb-4cfa-ab03-3f9946d58e6e"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getDistrict()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="370" width="139" height="47" uuid="785bec16-01c8-410a-ab37-c82ea7dec45f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getStretName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="417" width="139" height="20" uuid="6a9f3571-7955-4f32-ba88-37374fd1c0ff"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="437" width="139" height="20" uuid="36cbaa18-a6cf-4021-8ba9-85c82b7dcbd3"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getFirstSurname()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="290" width="139" height="20" uuid="76149257-0306-406f-8148-f5930e2ef34f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getState()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="330" width="139" height="20" uuid="562428b1-cfdc-4d60-a66f-38af28fcc185"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getMunicipality()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="417" width="139" height="20" uuid="a5ade4e5-25dc-4419-8581-83d7721e788d"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="370" width="139" height="47" uuid="ac41b026-397a-4f4f-8774-c862a1c5ada6"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getStretName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="230" width="139" height="20" uuid="0a53af96-b751-412d-994e-097e844eec97"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getSizeCompany()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="350" width="139" height="20" uuid="405d2554-f42b-4a17-ae4d-27bc36bae5d1"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getDistrict()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="437" width="139" height="20" uuid="9e763aa5-647c-4d7e-b56e-1ed2b1904508"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getFirstSurname()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="310" width="139" height="20" uuid="db02074d-1302-4214-84f5-370e2df50c07"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="250" width="139" height="20" uuid="2d0b28ca-7233-425f-83ac-56cfd4ec9dd1"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getEconomicActivity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="270" width="139" height="20" uuid="8e21e740-7556-4839-84be-cab448acc1cf"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getWebSite()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="290" width="139" height="20" uuid="bc71f3ed-d8da-473b-9daa-61505008b505"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getState()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="330" width="139" height="20" uuid="27c38a80-8d46-4d6b-8a4a-ee2ce386b86a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getMunicipality()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="417" width="139" height="20" uuid="c45f044e-4ff1-4d58-8507-001cbd92f238"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="370" width="139" height="47" uuid="674eb8e2-ef95-4ddb-b43a-63d2d197eb06"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getStretName()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="230" width="139" height="20" uuid="6a5d888a-738d-4b44-9b1e-7e06f84551c7"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getSizeCompany()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="350" width="139" height="20" uuid="77147055-e7b3-4006-a5f9-1f2e8c43a77f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getDistrict()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="437" width="139" height="20" uuid="f5c82f8c-6526-4735-8c02-05a9bababffe"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getFirstSurname()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="310" width="139" height="20" uuid="85f120a7-0a98-4166-be76-75ba7c51041f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="250" width="139" height="20" uuid="cd4131d3-d264-4b08-bdcf-2bcca0893087"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getEconomicActivity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="270" width="139" height="20" uuid="a3a16670-3183-475c-b9ee-41a43fbd150a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getWebSite()]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="457" width="31" height="20" uuid="79afc931-9cc8-472a-946e-5bc37dd15e8c"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[21]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="477" width="31" height="20" uuid="e54d18ef-58d0-4726-8e84-c9a2e825e121"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[22]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="497" width="31" height="20" uuid="2513f519-09fc-4094-9931-ef0c25885767"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[23]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="517" width="31" height="20" uuid="dc9175f9-9b2d-4037-921b-2a59338faf75"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[24]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="537" width="31" height="20" uuid="3f8e41cc-819f-448c-9670-bd590127b9c7"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[25]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="557" width="31" height="20" uuid="32986115-5bb5-44c9-b46b-8940515bd6b9"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[26]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="577" width="31" height="20" uuid="3bccdf31-b995-4b26-8828-8ab50679bce1"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[27]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="597" width="31" height="20" uuid="b9a762b5-0316-428d-9159-fb94451327ac"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[28]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="617" width="31" height="20" uuid="c4e9482a-b31f-4345-91b1-6106ea25796a"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[29]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="637" width="31" height="20" uuid="35b8a29b-8970-4939-8501-4e71b28bf3f2"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[30]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="457" width="172" height="20" uuid="46e631bc-8cc3-4b07-9b15-2ba78de9455d"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Apellido Materno ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="477" width="172" height="20" uuid="a8e9efcb-072c-43cd-93be-657d2219f70b"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Telefono ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="497" width="172" height="20" uuid="720e6da6-1321-4cb4-a496-c6bc82f32049"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Contacto Principal. Correo electrónico]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="517" width="172" height="20" uuid="31183267-3871-439e-9c94-9d0191b20f3a"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Recursos humanos]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="537" width="172" height="20" uuid="aede8ff6-6504-454b-aae6-93fedbe392f7"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación Legal]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="557" width="172" height="20" uuid="6398811f-5a96-4149-a940-c97d535f5164"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación Fiscal]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="577" width="172" height="20" uuid="07d82d2c-f909-4fbf-a97f-c2009ef1f807"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación Ética e integridad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="597" width="172" height="20" uuid="93fb8c0a-0e03-4342-8e1b-caf6b1384e47"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación de Finanzas]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="617" width="172" height="20" uuid="72b989d2-9ddb-429e-8b49-09fec0c62cdb"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación comercial]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="637" width="172" height="20" uuid="5b70351d-a539-4178-8925-9267ed7d1374"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación de calidad]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="457" width="139" height="20" uuid="7cd60a80-5e95-49ad-ae32-d31d4b4ac0e7"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getSecondSurname()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="477" width="139" height="20" uuid="e7040a63-602e-4ea1-a324-4e4a50cbb158"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getMobilePhone()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="497" width="139" height="20" uuid="e0828ad2-6d9b-4b33-ba9c-06d6525a200f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getEmail()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="517" width="139" height="20" uuid="41c86015-dbe6-483a-9090-e6bfb3ccb49b"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getRecursosHumanos()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="537" width="139" height="20" uuid="1bc5cf05-d5a7-485b-a584-6dc79863972b"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreLegal()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="557" width="139" height="20" uuid="9530b7e0-5f0f-453a-b50b-028d758f2cd8"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreFiscal()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="577" width="139" height="20" uuid="b6a42b4f-e63b-4f29-977f-552ace349e1a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreEthicsIntegrity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="597" width="139" height="20" uuid="feefb546-b983-4b68-83a0-1956e50bddf8"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreFinancial()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="617" width="139" height="20" uuid="c9f9aa87-f943-45d0-8c97-1ffeabd759db"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreCommercial()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="637" width="139" height="20" uuid="f40a7362-8d2e-43fb-b526-d0733d9a06f9"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreQuality()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="457" width="139" height="20" uuid="0dffd723-58e7-4e95-9405-a27cede21170"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getSecondSurname()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="477" width="139" height="20" uuid="a0513d5a-ecf9-42be-81d5-fe6c2b3ef570"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getMobilePhone()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="637" width="139" height="20" uuid="bcb1e7e1-5572-4665-9409-fa957f1f1ba6"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreQuality()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="557" width="139" height="20" uuid="f059d051-85e2-4a08-9f97-f16020aaeeb0"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreFiscal()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="597" width="139" height="20" uuid="21c64b95-2e98-4dd1-9cef-e63e729e105a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreFinancial()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="517" width="139" height="20" uuid="1e9920bd-f2d0-497e-aacb-ed34492a8718"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getRecursosHumanos()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="497" width="139" height="20" uuid="2f20984d-0eb9-4c46-87d4-87f4072d32a5"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getEmail()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="577" width="139" height="20" uuid="f2e16f7b-1bce-4e9c-a195-b1ece0c65ab5"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreEthicsIntegrity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="537" width="139" height="20" uuid="fa8a2abc-e2cc-4d86-b78c-d2c9b513a7b3"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreLegal()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="617" width="139" height="20" uuid="4bdf63fb-5b61-4428-a10d-0f254bb19bcd"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreCommercial()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="457" width="139" height="20" uuid="89d91785-969f-4f85-beda-a2eb5fbb74c7"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getSecondSurname()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="477" width="139" height="20" uuid="35c58404-a42f-4a5e-b8cc-51232a257ac6"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getMobilePhone()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="637" width="139" height="20" uuid="a294d0e2-282b-4c20-a1cb-f7160f2cdcc1"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreQuality()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="557" width="139" height="20" uuid="e64f7871-51b9-42c1-add6-05d5e6801b44"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreFiscal()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="597" width="139" height="20" uuid="6acfd15a-7bd3-46ee-a861-3a1d3238fe71"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreFinancial()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="517" width="139" height="20" uuid="17feb68c-e54a-467c-b634-ab26cef9d3aa"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getRecursosHumanos()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="497" width="139" height="20" uuid="0f86ba0d-69f0-4b95-87aa-21a07682d84f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getEmail()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="577" width="139" height="20" uuid="f3a493f5-c3f6-4e15-927f-d5ea72f6399a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreEthicsIntegrity()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="537" width="139" height="20" uuid="c097892a-fdd3-4874-8833-e7990e57ffcb"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreLegal()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="617" width="139" height="20" uuid="889ea5fd-a1d1-48b7-b7f3-c956f133ed53"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreCommercial()]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="657" width="31" height="20" uuid="1c0f690b-6ef6-4b9f-91c2-46895988a154"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[31]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="677" width="31" height="20" uuid="07b2496a-4b46-4722-ac5a-735794673c2d"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[32]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="697" width="31" height="20" uuid="d10bfe54-0a73-48f0-bbdf-eca3d4e0651e"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[33]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="717" width="31" height="20" uuid="1483bff1-8b9f-4988-aab9-811b682200cb"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[34]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="737" width="31" height="20" uuid="5049db5d-c5d0-40ec-9432-3b1b9a4d4fa8"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[35]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="757" width="31" height="20" uuid="2b6f0df0-9eab-4364-8086-5192785c2c02"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[36]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="777" width="31" height="20" uuid="d295abb4-3ddc-4370-a146-3262e64f7b66"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[37]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="797" width="31" height="20" uuid="37b9fe51-9842-4365-a534-5ee8d8d2b153"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[38]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="817" width="31" height="35" uuid="29b1670e-35cb-4466-aabb-12c6696f1d06"/>
+                <textElement textAlignment="Center">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[39]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="657" width="172" height="20" uuid="a027da3f-c6b3-4706-94ea-9950fedab3f4"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación de salud y seguridad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="677" width="172" height="20" uuid="0028d8a9-57c1-49fc-b1e6-e3acb825fb96"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación de medio ambiente]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="697" width="172" height="20" uuid="babebf76-60a7-48dc-8a7c-190562e7c19a"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación de operación]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="717" width="172" height="20" uuid="942a2a38-7194-4ebb-a1b2-5a3723328084"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Evaluación Económica]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="737" width="172" height="20" uuid="2a1d3cdb-b87e-49db-9652-05eb9186eff5"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Certificado de calidad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="757" width="172" height="20" uuid="427eadfb-6004-4f48-8211-b6b1c92d2812"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Certificado de Salud y seguridad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="777" width="172" height="20" uuid="8d0d2419-0340-465f-8ba1-f31ecc77890b"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Certificado Ambiental]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="797" width="172" height="20" uuid="9e9d1cda-6732-4508-8af1-cb2b2f07e10d"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Observación en Listas(Sí/No)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="31" y="817" width="172" height="35" uuid="8569fe11-7728-490e-a7e2-4f00ec391584"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[Inhabilitado SFP(Secretaría de la Función pública)(Sí/No)]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="657" width="139" height="20" uuid="e0485e57-412f-4a65-a366-53ce5b2dd39e"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreHealth()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="677" width="139" height="20" uuid="9f9d46dd-1bba-4d37-9bea-0d93d54b57c6"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreEnvironment()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="697" width="139" height="20" uuid="b25133b3-88ce-41e0-bfbe-0d63de213b76"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreOperation()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="717" width="139" height="20" uuid="2d9c20d7-5138-4a2c-915c-3abd642f17c5"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getScoreEconomic()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="737" width="139" height="20" uuid="a77fcbdd-5c98-48ed-bef4-62db632b91b6"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCertificateQuality() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="757" width="139" height="20" uuid="ad632050-043a-4a71-9411-0c3a4244587f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCertificateHealthSafety() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="777" width="139" height="20" uuid="ea42d953-2e30-49fe-b34f-dc185421a59c"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getCertificateEnvironmental() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="797" width="139" height="20" uuid="2ff246c5-b7fd-4e3d-850b-2e3c4be9e610"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getObservationList() > 0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="203" y="817" width="139" height="35" uuid="40f99170-6a29-43ad-9cbb-cf767db6d2e7"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierOne().getDisabledSfp() > 0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="657" width="139" height="20" uuid="b23f5a8a-a374-4875-809b-a0d2a4c6eae7"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreHealth()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="697" width="139" height="20" uuid="e130ce37-474a-4a0c-8e8f-8d4f976580fe"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreOperation()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="677" width="139" height="20" uuid="206f9b76-9d05-4d2b-80e3-5417429a411d"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreEnvironment()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="717" width="139" height="20" uuid="133a24c1-4e71-4991-b5ff-8963ebfade97"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getScoreEconomic()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="797" width="139" height="20" uuid="6d0cff0d-2939-437f-85e5-734b5e8e865c"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getObservationList() > 0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="757" width="139" height="20" uuid="e36c82d2-f537-4687-a237-6808eae7dd5a"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCertificateHealthSafety() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="737" width="139" height="20" uuid="19ab055c-ec7f-40cc-aca4-de8b4e8b678e"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCertificateQuality() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="817" width="139" height="35" uuid="0d658d5d-aaed-4df5-931b-89d6cee29dce"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getDisabledSfp() > 0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="342" y="777" width="139" height="20" uuid="bc2627ab-6510-4b65-a593-eb733b34072c"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierTwo().getCertificateEnvironmental() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="657" width="139" height="20" uuid="cf25b0ab-56ce-4bf1-a89b-229894469db0"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreHealth()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="697" width="139" height="20" uuid="769d596d-3fd5-402b-bd97-a1d93aedf65f"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreOperation()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="677" width="139" height="20" uuid="a2601934-296b-4b67-a4d4-ae9a576d6fd4"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreEnvironment()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="717" width="139" height="20" uuid="4ff40111-396f-4747-9555-e5b35d786c32"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getScoreEconomic()]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="797" width="139" height="20" uuid="26223c8e-a50b-4205-8cd5-855f97cd9284"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getObservationList() > 0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="757" width="139" height="20" uuid="29680fb9-2647-4385-8721-084486c16a6e"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCertificateHealthSafety() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="737" width="139" height="20" uuid="8136b121-a32d-4b3a-b08c-69da364e8663"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCertificateQuality() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="817" width="139" height="35" uuid="2892f62a-ea14-4700-bbf3-4be6c40c29f8"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getDisabledSfp() > 0 ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="481" y="777" width="139" height="20" uuid="75f80cde-9c7f-4230-8ce6-ba63d23eb373"/>
+                <textFieldExpression><![CDATA[$P{detalle}.getSupplierThree().getCertificateEnvironmental() == true ? "Si" : "No"]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
+
+
